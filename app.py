@@ -91,7 +91,7 @@ if st.button("Analyse Sentiment") and ticker:
                     colour = "😶"
 
                 date_uk = datetime.strptime(article["date"], "%Y-%m-%d").strftime("%d/%m/%Y")
-                st.markdown(f"{colour} **[{article['headline']}]({article['url']})** — *{article['source']}* · {date_uk}")
+                st.markdown(f"{colour} **[{article['headline']}]({article['url']})** – *{article['source']}* · {date_uk}")
                 st.caption(f"Sentiment: {article['sentiment']} ({article['confidence']}% confidence)")
                 st.divider()
 
