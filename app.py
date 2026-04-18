@@ -26,8 +26,8 @@ st.markdown("""
     background-attachment: fixed;
 }
 input:focus {
-    border-color: #FFD700 !important;
-    box-shadow: 0 0 0 2px #FFD700 !important;
+    border-color: #62fc03 !important;
+    box-shadow: 0 0 0 2px #62fc03 !important;
 }
 </style>
 """, unsafe_allow_html=True)
