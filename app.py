@@ -74,7 +74,7 @@ if st.button("Analyse Sentiment") and ticker:
             col3.metric("Neutral", neu)
             col4.metric("Negative", neg)
 
-            st.subheader(f"Latest headlines for '{ticker}':")
+            st.subheader(f"Latest headlines for '{ticker}' — last 30 days:")
             dates = [a["date"] for a in articles]
             min_date = datetime.strptime(min(dates), "%Y-%m-%d").strftime("%d/%m/%Y")
             max_date = datetime.strptime(max(dates), "%Y-%m-%d").strftime("%d/%m/%Y")
