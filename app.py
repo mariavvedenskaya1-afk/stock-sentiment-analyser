@@ -81,4 +81,9 @@ if st.button("Analyse Sentiment") and ticker:
                 st.caption(f"Sentiment: {article['sentiment']} ({article['confidence']}% confidence)")
                 st.divider()
 
-            st.bar_chart(counts)
+            import altair as alt
+chart = alt.Chart(counts.reset_index()).mark_bar(color="#FFD700").encode(
+    x=alt.X("sentiment", title="Sentiment"),
+    y=alt.Y("count", title="Count")
+)
+st.altair_chart(chart, use_container_width=True)
