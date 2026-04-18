@@ -82,7 +82,7 @@ if st.button("Analyse Sentiment") and ticker:
                 st.divider()
 
             import altair as alt
-chart = alt.Chart(counts.reset_index()).mark_bar(color="#FFD700").encode(
+chart = alt.Chart(counts.reset_index()).mark_bar(color="#be26ff").encode(
     x=alt.X("sentiment", title="Sentiment"),
     y=alt.Y("count", title="Count")
 )
