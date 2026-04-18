@@ -49,7 +49,7 @@ if st.button("Analyse Sentiment") and ticker:
     with st.spinner("Fetching news and analysing sentiment..."):
         classifier = load_model()
         articles = fetch_news(ticker, api_key)
-        articles = sorted(articles, key=lambda x: x["date"])
+        articles = sorted(articles, key=lambda x: x["date"], reverse=True)
 
         if not articles:
             st.error("No articles found. Try a different company name.")
