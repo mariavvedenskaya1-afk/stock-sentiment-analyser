@@ -73,7 +73,7 @@ if st.button("Analyse Sentiment") and ticker:
             col4.metric("Negative", neg)
 
             st.subheader(f"Latest headlines for '{ticker}':")
-            if articles:
+
     dates = [a["date"] for a in articles]
     st.caption(f"Showing articles from {min(dates)} to {max(dates)}")
             st.markdown("🤩 Positive  \n😶 Neutral  \n🫪 Negative")
