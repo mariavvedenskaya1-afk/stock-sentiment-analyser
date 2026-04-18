@@ -66,7 +66,7 @@ if st.button("Analyse Sentiment") and ticker:
             col4.metric("Negative", neg)
 
             st.subheader(f"Latest headlines for '{ticker}'")
-            st.markdown("🤩 Positive &nbsp;&nbsp; 😶 Neutral &nbsp;&nbsp; 🫪 Negative")
+            st.markdown("🤩 Positive  \n😶 Neutral  \n🫪 Negative")
 
             for article in articles:
                 sentiment = article["sentiment"]
