@@ -40,7 +40,7 @@ input:focus {
 """, unsafe_allow_html=True)
 
 st.title("Stock Sentiment Analyser")
-st.caption("Powered by FinBERT - an AI model trained on financial text")
+st.caption("Powered by FinBERT – an AI model trained on financial text")
 
 api_key = st.secrets["NEWSAPI_KEY"]
 ticker = st.text_input("Enter a company name or ticker (e.g. Apple, Tesla, NVIDIA)")
