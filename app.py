@@ -139,4 +139,5 @@ if st.button("Analyse Sentiment") and ticker:
                 y=alt.Y("count", title="Count")
             )
             st.altair_chart(chart, use_container_width=True)
-            st.caption("Powered by FinBERT")
+            
+    st.caption("Powered by FinBERT")
