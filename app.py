@@ -36,6 +36,15 @@ input:focus {
     border-color: #9af540 !important;
     box-shadow: 0 0 0 2px #9af540 !important;
 }
+* {
+    color: white !important;
+}
+.st-emotion-cache-1wbqy5l {
+    color: white !important;
+}
+p, h1, h2, h3, label, span {
+    color: white !important;
+}
 </style>
 """, unsafe_allow_html=True)
 
