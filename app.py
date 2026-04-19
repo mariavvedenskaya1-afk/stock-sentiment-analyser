@@ -54,10 +54,12 @@ button p {
     color: white !important;
 }
 
-input {
+input, input:focus, input:active {
     background-color: #262731 !important;
     color: white !important;
-    border: 1px #262731 !important;
+    border-color: #262731 !important;
+    outline: none !important;
+    box-shadow: none !important;
 }
 </style>
 """, unsafe_allow_html=True)
