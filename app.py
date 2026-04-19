@@ -57,7 +57,7 @@ button p {
 input {
     background-color: #262731 !important;
     color: white !important;
-    border: 1px #262731 !important;
+    border: 1px solid #262731 !important;
 }
 </style>
 """, unsafe_allow_html=True)
