@@ -36,7 +36,7 @@ p, h1, h2, h3, label, span {
 button {
     background-color: #262731 !important;
     color: white !important;
-    border: 1px #262731 !important;
+    border: 1px solid #262731 !important;
 }
 button p {
     color: white !important;
@@ -68,11 +68,9 @@ input:focus, input:active {
     box-shadow: 0 0 0 2px #9af540 !important;
     outline: none !important;
 }
-
 label p {
     font-size: 20px !important;
     font-weight: 400 !important;
-}
 }
 </style>
 """, unsafe_allow_html=True)
@@ -139,5 +137,5 @@ if st.button("Analyse Sentiment") and ticker:
                 y=alt.Y("count", title="Count")
             )
             st.altair_chart(chart, use_container_width=True)
-            
-    st.caption("Powered by FinBERT")
+
+st.caption("Powered by FinBERT – an AI model trained on financial text")
