@@ -27,16 +27,17 @@ st.markdown("""
     background-position: center;
     background-attachment: fixed;
 }
-input:focus {
+input:focus, input:active {
+    background-color: #262731 !important;
+    color: white !important;
+    border-color: #9af540 !important;
+    outline: none !important;
+    box-shadow: 0 0 0 2px #9af540 !important;
+}
+
+[data-baseweb="input"]:focus-within {
     border-color: #9af540 !important;
     box-shadow: 0 0 0 2px #9af540 !important;
-    outline: none !important;
-}
-[data-baseweb="input"] {
-    border-color: #262731 !important;
-    box-shadow: none !important;
-    border-width: 1px !important;
-    border-style: solid !important;
 }
 * {
     color: white !important;
