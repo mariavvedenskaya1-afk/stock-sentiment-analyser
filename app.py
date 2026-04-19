@@ -27,22 +27,7 @@ st.markdown("""
     background-position: center;
     background-attachment: fixed;
 }
-input:focus, input:active {
-    background-color: #262731 !important;
-    color: white !important;
-    border-color: #9af540 !important;
-    outline: none !important;
-    box-shadow: 0 0 0 2px #9af540 !important;
-}
-
-[data-baseweb="input"]:focus-within {
-    border-color: #9af540 !important;
-    box-shadow: 0 0 0 2px #9af540 !important;
-}
 * {
-    color: white !important;
-}
-.st-emotion-cache-1wbqy5l {
     color: white !important;
 }
 p, h1, h2, h3, label, span {
@@ -51,18 +36,37 @@ p, h1, h2, h3, label, span {
 button {
     background-color: #262731 !important;
     color: white !important;
-    border: 1px #262731 !important;
+    border: 1px solid white !important;
 }
 button p {
     color: white !important;
 }
-
-input, input:focus, input:active {
+input {
     background-color: #262731 !important;
     color: white !important;
     border-color: #262731 !important;
     outline: none !important;
     box-shadow: none !important;
+}
+input:focus, input:active {
+    background-color: #262731 !important;
+    color: white !important;
+    border-color: #9af540 !important;
+    outline: none !important;
+    box-shadow: 0 0 0 2px #9af540 !important;
+}
+[data-baseweb="input"] {
+    border-color: #262731 !important;
+    box-shadow: none !important;
+    border-width: 1px !important;
+    border-style: solid !important;
+}
+[data-baseweb="input"]:focus-within,
+[data-baseweb="input"]:focus,
+[data-baseweb="input"]:active {
+    border-color: #9af540 !important;
+    box-shadow: 0 0 0 2px #9af540 !important;
+    outline: none !important;
 }
 </style>
 """, unsafe_allow_html=True)
