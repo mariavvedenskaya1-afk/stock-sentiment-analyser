@@ -82,7 +82,7 @@ st.title("Stock Sentiment Analyser")
 st.caption("Powered by FinBERT")
 
 api_key = st.secrets["NEWSAPI_KEY"]
-ticker = st.text_input("Enter any company name or ticker! (e.g. Apple)")
+ticker = st.text_input("Enter any company name or ticker (e.g. Apple)")
 
 if st.button("Analyse Sentiment") and ticker:
     with st.spinner("Fetching news and analysing sentiment..."):
