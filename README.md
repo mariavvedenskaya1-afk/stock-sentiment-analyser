@@ -20,7 +20,3 @@ I built this project to develop practical AI and Python skills relevant to finan
 - Streamlit - web app framework
 - NewsAPI - live financial news data
 - Pandas - data processing
-
-## How to run locally
-
-1. Clone the repo
