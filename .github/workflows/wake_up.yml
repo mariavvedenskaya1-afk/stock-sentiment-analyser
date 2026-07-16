@@ -1,0 +1,13 @@
+name: Wake Up App
+
+on:
+  schedule:
+    - cron: '0 */6 * * *'
+  workflow_dispatch: {}
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Visit App
+        run: curl -I https://stock-sentiment-analyser-zar3cdkvenw3to74ve4dvl.streamlit.app/
