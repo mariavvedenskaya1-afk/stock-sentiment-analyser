@@ -2,6 +2,11 @@
 
 An AI-powered web app that analyses the sentiment of live financial news headlines for any stock or company, built with Python and deployed on Streamlit Cloud.
 
+Available at: https://stocksentimentanalyser.streamlit.app/
+
+<img width="1390" height="535" alt="Screenshot 2026-07-16 at 15 54 37" src="https://github.com/user-attachments/assets/f4ebd4b1-5f0f-4e8f-ba92-9219c0d9ba5f" />
+
+
 ## What it does
 
 - Fetches the latest financial news headlines for any company using the NewsAPI
