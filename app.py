@@ -9,6 +9,7 @@ from datetime import datetime, timedelta
 def load_model():
     return pipeline("sentiment-analysis", model="ProsusAI/finbert")
 
+@st.cache_data(ttl=3600)
 def fetch_news(ticker, api_key):
     one_month_ago = (datetime.now() - timedelta(days=30)).strftime("%Y-%m-%d")
     url = f"https://newsapi.org/v2/everything?q={ticker}&language=en&sortBy=relevancy&pageSize=20&from={one_month_ago}&excludeDomains=spinalcolumnradiology.com,pinkvilla.com,tmz.com&apiKey={api_key}"
