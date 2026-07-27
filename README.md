@@ -16,7 +16,7 @@ Live at: https://stocksentimentanalyser.streamlit.app/
 
 ## The Intention Behind It
 
-I built this project to develop practical AI and Python skills relevant to finance and fintech roles. It demonstrates how natural language processing can be applied to real financial data; a technique used by quantitative analysts and fintech companies to inform trading decisions.
+I built this project to develop practical AI and Python skills relevant to finance and fintech roles. It demonstrates how natural language processing can be applied to real financial data. Sentiment analysis is a technique often used by quantitative analysts and fintech companies to inform trading decisions.
 
 ## Tech Stack
 
